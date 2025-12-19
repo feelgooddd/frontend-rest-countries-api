@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./search.css";
+
 const Search = ({ searchQuery, setSearchQuery }) => {
-  console.log(searchQuery);
+  const [inputValue, setInputValue] = useState(searchQuery);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSearchQuery(inputValue);
+    }, 300);
+
+    return () => clearTimeout(timer); // cleanup previous timeout
+  }, [inputValue, setSearchQuery]);
+
   return (
     <section className="search-area bg-component">
       <i className="fa-solid fa-magnifying-glass"></i>
       <input
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
         type="text"
-        name="search-input"
-        id=""
         placeholder="Search for a country..."
       />
     </section>
