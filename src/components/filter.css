@@ -1,0 +1,15 @@
+.filter-area {
+  margin-inline: 20px;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+
+}
+
+select {
+  border: none;
+  background: transparent;
+  color: var(--clr-main-5);
+  outline: none;
+}

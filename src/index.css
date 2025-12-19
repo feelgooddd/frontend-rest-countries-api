@@ -1,0 +1,33 @@
+:root {
+  --clr-main-1: hsl(209, 23%, 22%);
+  --clr-main-2: hsl(207, 26%, 17%);
+  --clr-main-3: hsl(200, 15%, 8%);
+  --clr-main-4: hsl(0, 0%, 50%);
+  --clr-main-5: hsl(0, 0%, 99%);
+  --clr-main-6: hsl(0, 100%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-main-1);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.bg-component {
+  background-color: var(--clr-main-2);
+}
+.bg-component-light{
+  background-color: var(--clr-main-6);
+}
+
+img {
+  display: block;
+  width: 100%;
+}

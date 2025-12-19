@@ -1,0 +1,28 @@
+i {
+  color: var(--clr-main-6);
+}
+
+.search-area {
+  margin-block: 50px;
+  padding: 20px 50px;
+  margin-inline: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.search-area input {
+  background-color: transparent;
+  border: none;
+  color: var(--clr-main-6);
+  outline: none;
+  margin-left: 15px;
+  font-size: 0.925rem;
+  width: 80%;
+  border: 1px solid var(--clr-main-4);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.search-area input::placeholder{
+    color: var(--clr-main-4);
+}

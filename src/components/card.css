@@ -1,0 +1,23 @@
+.country-card img {
+  width: 100%;
+}
+
+.country-card-details p {
+  margin-block: 1rem;
+}
+
+.country-card-details {
+  padding: 5px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.country-card-details span {
+  opacity: 70%;
+}
+.country-card {
+  margin: 20px;
+  border-radius: 10px;
+  color: var(--clr-main-6);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
