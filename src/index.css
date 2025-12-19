@@ -23,11 +23,52 @@ body {
 .bg-component {
   background-color: var(--clr-main-2);
 }
-.bg-component-light{
+.bg-component-light {
   background-color: var(--clr-main-6);
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+@media screen and (min-width: 625px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .country-card-detailed {
+    padding: 5px;
+  }
+
+  .country-card-detailed__details-left {
+    display: flex;
+  }
+  .country-card-detailed__details-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px 10px;
+    word-break: keep-all;
+  }
+  .country-card-detailed__details {
+    display: flex;
+  }
+  .details-top {
+    display: flex;
+    gap: 50px;
+  }
+
+  .border-details.border-details {
+    display: flex;
+    flex-direction: row;
+  }
+  .border-country{
+    display: flex;
+    align-items: center;
+  }
 }

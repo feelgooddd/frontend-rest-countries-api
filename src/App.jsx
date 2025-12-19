@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Search from "./components/Search";
 import Filter from "./components/Filter";
 import Cards from "./components/Cards";
-
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   const [data, setData] = useState([]);
   const [region, setRegion] = useState("all");
@@ -43,6 +43,7 @@ useEffect(() => {
         searchQuery={searchQuery}
         data={data}
       />
+      <ScrollToTop/>
     </div>
   );
 };
